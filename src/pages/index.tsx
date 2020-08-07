@@ -1,22 +1,19 @@
-import Link from 'next/link'
 import Header from '../components/header'
-import ExtLink from '../components/ext-link'
-import Features from '../components/features'
-import GitHub from '../components/svgs/github'
-import sharedStyles from '../styles/shared.module.css'
 
 export default () => (
   <>
     <Header titlePre="Home" />
-    <div className={sharedStyles.layout}>
+    {/* <div className={sharedStyles.layout}> */}
+    <div className="block mx-10 py-10">
       <img
+        className="mx-auto"
         src="/vercel-and-notion.png"
         height="85"
         width="250"
         alt="Vercel + Notion"
       />
-      <h1>My Notion Blog</h1>
-      <h2>
+      <h1 className="text-lg text-center">Notion Blog Sample</h1>
+      {/* <h2>
         Blazing Fast Notion Blog with Next.js'{' '}
         <ExtLink
           href="https://github.com/vercel/next.js/issues/9524"
@@ -25,11 +22,11 @@ export default () => (
         >
           SSG
         </ExtLink>
-      </h2>
+      </h2> */}
 
-      <Features />
+      {/* <Features /> */}
 
-      <div className="explanation">
+      {/* <div className="explanation">
         <p>
           This is a statically generated{' '}
           <ExtLink href="https://nextjs.org">Next.js</ExtLink> site with a{' '}
@@ -61,7 +58,7 @@ export default () => (
           After finding your token and your blog's page id you should be good to
           go!
         </p>
-      </div>
+      </div>*/}
     </div>
   </>
 )

@@ -15,6 +15,7 @@ try {
 } catch (_) {
   /* non fatal */
 }
+const withCSS = require('@zeit/next-css')
 
 const warnOrError =
   process.env.NODE_ENV !== 'production'
