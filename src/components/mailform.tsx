@@ -10,15 +10,15 @@ export default () => {
   }
   return (
     <form onSubmit={submit} className="w-full max-w-sm flow-root">
-      <div className="md:flex md:items-center mb-6">
-        <div className="md:w-1/3">
+      <div className="flex items-center mb-6">
+        <div className="w-1/3">
           <label
             htmlFor="email"
-            className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+            className="block text-gray-500 font-bold text-right mb-1 mb-0 pr-4"
           >
             Email
           </label>
-          <div className="md:w-2/3">
+          <div className="w-2/3">
             <input
               id="email"
               type="email"
@@ -28,11 +28,11 @@ export default () => {
           </div>
         </div>
       </div>
-      <div className="md:flex md:items-center mb-6">
-        <div className="md:w-1/3">
+      <div className="flex items-center mb-6">
+        <div className="w-1/3">
           <label
             htmlFor="message"
-            className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+            className="block text-gray-500 font-bold text-right mb-1 mb-0 pr-4"
           >
             Message
           </label>
@@ -43,9 +43,9 @@ export default () => {
           />
         </div>
       </div>
-      <div className="md:flex md:items-center">
-        <div className="md:w-1/3"></div>
-        <div className="md:w-2/3">
+      <div className="flex items-center">
+        <div className="w-1/3"></div>
+        <div className="w-2/3">
           <button
             type="submit"
             className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
